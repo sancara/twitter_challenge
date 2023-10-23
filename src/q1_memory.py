@@ -48,4 +48,6 @@ def q1_memory(file_path: str) -> List[Tuple[datetime.date, str]]:
     # mencionando al usuario que más tweets realizó en cada fecha
     # devuelvo el elemento como una lista de tuplas con los tipos de datos solicitados por la función
 
-    return top_10_dates.join(most_active_users_per_date, on=['date'], how='left').select('date', 'username').collect()
+    list_top10 = top_10_dates.join(most_active_users_per_date, on=['date'], how='left').select('date', 'username')
+    export = list_top10.rdd.map(lambda row: (row['date'], row['username'])).collect()
+    return export
