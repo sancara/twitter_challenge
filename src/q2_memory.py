@@ -1,4 +1,5 @@
 from typing import List, Tuple
+from pyspark.sql import SparkSession
 import advertools as adv
 
 spark = SparkSession \
