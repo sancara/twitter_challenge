@@ -31,6 +31,13 @@ Para ejecutar el código en tiempo real, basta con entrar a una notebook de [Goo
     - file_path = 'farmers-protest-tweets-2021-2-4.json'
 6. Debería quedar de la siguiente manera:
     - ![Colab](https://imgtr.ee/images/2023/10/24/c106cf1389a6ea04d0f93067d840df10.png)
+7. Podemos copiar el contenido de los scripts que se encuentran en src/:
+       - q1_memory
+       - q2_memory
+       - q2_time
+       - q3_memory
+8. Llamamos a la función con el file_path generado y le damos al play de la celda de código.
+
 
 ## Mejoras
 
